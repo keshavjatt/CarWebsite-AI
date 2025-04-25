@@ -363,7 +363,7 @@ export const AddCarForm = () => {
 
                   {/* Price */}
                   <div className="space-y-2">
-                    <Label htmlFor="price">Price ($)</Label>
+                    <Label htmlFor="price">Price</Label>
                     <Input
                       id="price"
                       {...register("price")}
@@ -656,7 +656,7 @@ export const AddCarForm = () => {
             <CardHeader>
               <CardTitle>AI-Powered Car Details Extraction</CardTitle>
               <CardDescription>
-                Upload an image of a car and let Gemini AI extract its details.
+                Upload an image of a car and let Vehiql AI extract its details.
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -724,7 +724,7 @@ export const AddCarForm = () => {
                     <div>
                       <p className="font-medium">Analyzing image...</p>
                       <p className="text-sm">
-                        Gemini AI is extracting car details
+                        Vehiql AI is extracting car details
                       </p>
                     </div>
                   </div>
@@ -734,7 +734,7 @@ export const AddCarForm = () => {
                   <h3 className="font-medium mb-2">How it works</h3>
                   <ol className="space-y-2 text-sm text-gray-600 list-decimal pl-4">
                     <li>Upload a clear image of the car</li>
-                    <li>Click "Extract Details" to analyze with Gemini AI</li>
+                    <li>Click "Extract Details" to analyze with Vehiql AI</li>
                     <li>Review the extracted information</li>
                     <li>Fill in any missing details manually</li>
                     <li>Add the car to your inventory</li>

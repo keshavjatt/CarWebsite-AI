@@ -42,16 +42,16 @@ export async function processCarImageWithAI(file) {
     // Define the prompt for car detail extraction
     const prompt = `
       Analyze this car image and extract the following information:
-      1. Make (manufacturer)
-      2. Model
-      3. Year (approximately)
-      4. Color
-      5. Body type (SUV, Sedan, Hatchback, etc.)
-      6. Mileage
-      7. Fuel type (your best guess)
-      8. Transmission type (your best guess)
-      9. Price (your best guess)
-      9. Short Description as to be added to a car listing
+      1. Make (Manufacturer)
+      2. Model – Identify or estimate the car model
+      3. Year – Approximate manufacturing year based on design cues or license plate if visible
+      4. Color – Dominant exterior color of the car
+      5. Body Type – Classify (e.g., SUV, Sedan, Hatchback, MUV, Coupe, Convertible, etc.)
+      6. Mileage (Approximate in kmpl) – Even if not visible, provide a mileage range based on body type, car age, and fuel type
+      7. Fuel Type (Guess) – Choose from Petrol, Diesel, CNG, or Electric based on visible hints
+      8. Transmission Type (Guess) – Manual or Automatic (guess based on car type)
+      9. Estimated Market Price in Indian Rupees (INR) – Based on condition, brand, and model. Provide approximate value like 4,50,000
+      9. Short Description – Write a short, appealing summary (2–3 lines) suitable for Indian car listing platforms like OLX, Cars24, or CarDekho. Highlight value or key features
 
       Format your response as a clean JSON object with these fields:
       {
